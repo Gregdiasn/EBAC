@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body > header {
+    background-color: rgb(12, 14, 14);
+    padding: 16px 0;
+    color: rgb(236, 233, 233);
+}
+header li a {
+    color:rgb(236, 233, 233);
+
+}
+
+header .container{
+    display: flex;
+    align-items: center; /*alinha os itens */
+    justify-content: space-between; /*distribui os espaços em proporçoes iguais */
+}
+
+header li{
+    text-decoration: none;
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 12px;
+    
+}
+header li:hover {
+    text-decoration: underline;
+}
+.container {
+    width: 1366px;
+    margin: 0 auto;
+}
+
+.articles {
+    display: flex;
+    flex-wrap: wrap; /* desempilha itens */
+    justify-content: space-between;
+}
+.articles article img {
+   /* height: 180px;*/
+   width: 100%;
+}
+
+.articles article{
+width: 30%;
+}
+
+section {
+    padding: 16px 0;
+}
+
+section h2, .articles article {
+    margin-bottom: 16px;
+}
+
+.articles article h3 {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    font-size: 24px;
+}
+
+.articles article a {
+    background-color: rgb(112, 110, 110);
+    color: #FFF;
+    padding: 8px;
+    display: inline-block; /*tirou a tag "a" de cima do texto " */
+    font-weight: bold; /*tag para deixar o botao "leia mais " mais gordinho' */
+    margin-top: 8px;
+}
+
+.articles article p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section h2 {
+    font-size: 32px;
+}
+
+a {
+text-decoration: none; /*tira o underline debaixo dos links */
+}
+
+.articles article a:hover {
+    text-decoration: underline; /*colocando o hover na frente da tag,
+    quando o mouse passar em cima do elemento ele gera o underline. 
+    colocando texto decoration underline */
+}
+
+#sport {
+    background-color: rgb(242, 245, 198);
+}
+
+#economy {
+    background-color: rgb(202, 227, 248);
+}
+#tecnology {
+    background-color: rgb(198, 238, 138);
+}
+#ambiente {
+    background-color: rgb(170, 147, 119);
+}
+
+
+
+/*position: absolute; deixa a img sobre o resto
+top 0;
+left: 0;
+position:fixed;  deixa algo fixado na tela mesmo que role */
